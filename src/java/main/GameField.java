@@ -1,10 +1,15 @@
+package main;
+
+import main.Constants;
+import static main.Constants.*;
+
 public class GameField {
     //State of all cells field
     private int[][] theField;
 
     //Initialize field and fill it zero values
     public GameField(){
-        theField = new int[COUNT_CELLS_X][Constant.COUNT_CELLS_Y];
+        theField = new int[COUNT_CELLS_X][COUNT_CELLS_Y];
         for(int i = 0; i < theField.length; i++){
             for(int j = 0; j < theField[i].length; i++){
                 theField[i][j] = 0;
