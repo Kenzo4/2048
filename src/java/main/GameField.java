@@ -34,10 +34,11 @@ public class GameField {
 
     //Change field by number i
     public void setLine(int i, int[] newLine){
-        for(int i = 0; i < COUNT_CELLS_X; i++){
+        for(int j = 0; j < COUNT_CELLS_X; j++){
             theField[j][i] = newLine[j];
         }
     }
+
     //Return array of cells state by number "i"
     public int[] getLine(int i){
         int[] ret = new int[COUNT_CELLS_X];
